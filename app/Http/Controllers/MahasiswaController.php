@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class MahasiswaController extends Controller
+{
+    public function index()
+    {
+        $mahasiswa = [
+            [
+                'nim' => '251011700828',
+                'nama' => 'Herlina Triansah',
+                'jurusan' => 'Sistem Informasi',
+                'email' => 'herlinatriansah45@gmail.com',
+                'kampus' => 'Universitas Pamulang',
+                'status' => 'Aktif'
+            ],
+        ];
+        return view('mahasiswa.index', compact('mahasiswa'));
+    }
+}
