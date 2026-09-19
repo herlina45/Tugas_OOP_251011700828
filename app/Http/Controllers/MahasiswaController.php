@@ -8,7 +8,7 @@ class MahasiswaController extends Controller
 {
     public function index()
     {
-        $mahasiswa = [
+        $mahasiswa =
             [
                 'nim' => '251011700828',
                 'nama' => 'Herlina Triansah',
@@ -16,8 +16,8 @@ class MahasiswaController extends Controller
                 'email' => 'herlinatriansah45@gmail.com',
                 'kampus' => 'Universitas Pamulang',
                 'status' => 'Aktif'
-            ],
-        ];
-        return view('mahasiswa.index', compact('mahasiswa'));
+
+            ];
+        return view('mahasiswa', compact('mahasiswa'));
     }
 }

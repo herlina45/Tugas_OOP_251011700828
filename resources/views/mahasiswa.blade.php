@@ -21,7 +21,7 @@
                 <div class="card shadow-sm border-0">
                     <div class="card-header bg-white text-center py-4">
                         <div class="d-flex justify-content-center mb-3">
-                            <img src="{{ asset('Kursi.jpg') }}" alt="" class="rounded-circle img-thumbnail"
+                            <img src="{{ asset('assets/Kursi.jpg') }}" alt="" class="rounded-circle img-thumbnail"
                                 style="width: 120px; height: 120px; object-fit: cover;">
                         </div>
                         <h5 class="card-title mb-4">Profile Mahasiswa</h5>
@@ -30,7 +30,7 @@
                     <div class="card-body text-center">
                         <p class="card-text"><strong>Nama:</strong> {{ $mahasiswa['nama'] }}</p>
                         <p class="card-text"><strong>NIM:</strong> {{ $mahasiswa['nim'] }}</p>
-                        <p class="card-text"><strong>Prodi:</strong> {{ $mahasiswa['prodi'] }}</p>
+                        <p class="card-text"><strong>Prodi:</strong> {{ $mahasiswa['jurusan'] }}</p>
                         <p class="card-text"><strong>Email:</strong> {{ $mahasiswa['email'] }}</p>
                         <p class="card-text"><strong>Kampus:</strong> {{ $mahasiswa['kampus'] }}</p>
                     </div>
