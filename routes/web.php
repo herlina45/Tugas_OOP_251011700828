@@ -15,3 +15,8 @@ Route::get('/about', function () {
 Route::get('/profile', [MahasiswaController::class, 'index']);
 Route::get('/project', [ProjectController::class, 'index'])->name('project.index');
 Route::get('/project/{id}', [ProjectController::class, 'show'])->name('project.show');
+Route::prefix('admin')->group(function () {
+    Route::get('/', function () {
+        return view('admin.template');
+    })->name('admin.home');
+});
